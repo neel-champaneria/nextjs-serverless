@@ -2,6 +2,8 @@ import connectMongoDB from "@/libs/mongodb";
 import Thought from "@/models/thoughts";
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 export const preferredRegion = ["bom1"];
 
 export async function POST(request: NextRequest) {
